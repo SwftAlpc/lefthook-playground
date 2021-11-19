@@ -5,8 +5,12 @@ post-merge:
     install:
       glob: "package.json"
       run: |
-        if type -a volta >/dev/null 2>&1; then
-          volta run npm install
+        if git diff HEAD^..HEAD --name-only | grep 'package.json'; then
+          if type -a volta >/dev/null 2>&1; then
+            volta run npm install
+          else
+            npm install
+          fi
         else
-          npm install
+          echo "not changed package.json"
         fi
