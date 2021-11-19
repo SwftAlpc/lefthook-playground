@@ -1,8 +1,8 @@
 post-merge:
   commands:
     test:
-      glob: "package.json"
-      run: echo "testtest"
+      exclude: "package.json"
+      run: echo "testtest {staged_files}"
     install:
       glob: "package.json"
       run: |
