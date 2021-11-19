@@ -1,0 +1,13 @@
+post-merge:
+  commands:
+    test:
+      glob: "package.json"
+      run: echo "testtest"
+    install:
+      glob: "package.json"
+      run: |
+        if type -a volta >/dev/null 2>&1; then
+          volta run npm install
+        else
+          npm install
+        fi

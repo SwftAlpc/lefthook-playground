@@ -1,0 +1,26 @@
+{
+  "name": "lefthook-playground",
+  "version": "1.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SwftAlpc/lefthook-playground.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SwftAlpc/lefthook-playground/issues"
+  },
+  "homepage": "https://github.com/SwftAlpc/lefthook-playground#readme",
+  "devDependencies": {
+    "@arkweid/lefthook": "^0.7.7"
+  },
+  "volta": {
+    "node": "16.13.0",
+    "npm": "8.1.4"
+  }
+}
