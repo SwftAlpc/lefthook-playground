@@ -1,7 +1,6 @@
 post-merge:
   commands:
     test:
-      glob: "package.json"
       run: echo "testtest {all_files}"
     install:
       glob: "package.json"
